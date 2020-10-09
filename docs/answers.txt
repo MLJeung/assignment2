@@ -1,0 +1,49 @@
+1.  Enumerating objects: 5, done.
+    Counting objects: 100% (5/5), done. 
+    Delta compression using up to 6 threads
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (4/4), 413 bytes | 413.00 KiB/s, done.
+    Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+    remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+    To https://github.com/MLJeung/assignment2.git
+    5c40e26..7ed5f9a  master -> master
+
+2.  $ git shortlog -sn --all
+     9  MLJeung
+     6  Esteban Parra
+     so in total there have been 15 commits
+
+3.  $ git log -1 --pretty="format:%ci" README.md
+    2020-10-08 18:57:45 -0500
+
+4.  Branches represent an independent line of development, and serve as an abstraction for the edit/stage/commit process.
+    The branches are pointers to changes made in the repository, they server to encapsulate the changes.
+
+5.  git log allows you to list the project history, filter it, and look
+    for specific changes. git status will let you inspect the working directory
+    and tje staging area.
+
+6.  $ git log Vehicle.h
+
+7.  $ git log --all --grep='file'
+
+8.  Inheritance- is the mechanism of basing an object or class upon another object or class , retaining similar implementation. Sub classes can inherit
+                    methods and functions that the parent class has, this way we can reuse code effeciently and maintain similar behaviors.
+
+    Polymorphism- allows a single body of code to work with objects of multiple types
+
+    Encapsulation- is used to hide the values or state of a structured data object inside a class, preventing unauthorized parties’ direct access to them. 
+                    Publicly accessible methods are generally provided in the class to access the values, and other client classes call these methods to retrieve 
+                    and modify the values within the object.
+
+9.  The main difference  between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow is that in a “Dictator and Lieutenants” workflow
+    is that the developers do not have two repositories, they can only pull from the central repository.
+
+10. A centralized workflow is a single collaboration model. Esentially one developer can push their changes no problem, however subseqent developers must merge to the most recent
+    repository. Then push as to not overwrite the first developers code, this works well with small groups and can be applied to larger groups if disciplend enough. However, for
+    large groups 100's and more, the “Dictator and Lieutenants” allows for a more structured process. Various integration managers (Lieutenants) have one integration manager above
+    them the benevolant Dictator.  It allows the project leader (the dictator) to delegate much of the work and collect large subsets of code at multiple points before integrating them.
+
+completed Git Lab Tutorials 10/7/2020
+
+Date that my GitHub account was made was 8/24/2020
